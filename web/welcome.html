@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+         <script src="lib/angular/angular.min.js"></script>
+         <link rel="stylesheet" href="csss/bootstrap.min.css">
+        <script src="csss/jquery.min.js"></script>
+        <script src="csss/bootstrap.min.js"></script>
+         <script src="ang/angular-route.min"></script>
+         <link href="style.css" rel="Stylesheet"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2" class="header" >
+                    <h1>Hospital Panel</h1> 
+                </td>   
+            </tr> 
+            <tr>
+                <td class="leftMenu">
+                    <a href="#/home">home </a><br>  
+                      <a href="#/about">about </a><br>     
+                    <a href="#/service">service </a><br>  
+                </td> 
+                <td class="mainContent">
+            <ng-view></ng-view>   
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="footer">
+                    <h1> Hospital footer</h1>  
+                </td>  
+            </tr>
+            
+        </table>
+    </body>
+</html>
